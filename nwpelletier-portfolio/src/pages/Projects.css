@@ -2,3 +2,90 @@
   padding: 2em;
   font-size: 24px;
 }
+
+.projects-container {
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.projects-list {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 10;
+}
+
+.project-title {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  color: grey;
+  transition: color 0.2s;
+}
+
+.project-subheading {
+  color: rgb(61, 121, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-subheading span {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.project-title:hover {
+  color: white;
+}
+
+.project-title.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.projects-container p {
+  text-align: justify;
+  padding: 1em 4em 1em 8em;
+  font-size: 24px;
+}
+
+.project {
+  display: flex;
+  overflow-x: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  padding-left: 8em;
+  background: linear-gradient(
+    to right,
+    rgb(14, 19, 26) 0%,
+    rgb(29, 27, 27) 30%,
+
+    rgb(24, 24, 26) 70%,
+
+    rgb(0, 0, 0) 100%
+  );
+}
+
+.project img {
+  width: 40%;
+}
+
+.project a {
+  text-decoration: none;
+  color: grey;
+}
+
+.project a:hover {
+  color: rgb(79, 90, 121);
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
