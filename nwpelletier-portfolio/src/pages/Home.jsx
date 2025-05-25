@@ -1,10 +1,12 @@
 import React from "react";
+import { Carousel } from ".././components/Carousel";
+import { slides } from ".././data/carouselData.json/";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home">
-      <h1>H1</h1>
-      <p>Nick Pelletier</p>
+      <Carousel data={slides} />
     </div>
   );
 };

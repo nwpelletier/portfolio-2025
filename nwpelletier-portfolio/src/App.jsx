@@ -10,6 +10,7 @@ function App() {
     <>
       <div className="page-wrapper">
         <Nav />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />

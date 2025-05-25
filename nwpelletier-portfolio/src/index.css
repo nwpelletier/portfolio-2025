@@ -5,25 +5,19 @@
   --primary-border-color: green;
   --secondary-border-color: brown;
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #fdfdfd;
+  background: linear-gradient(
+    90deg,
+    #1c1c1e 0%,
+    #414149 25%,
+    #4b4b63 50%,
+    #414149 75%,
+    #1c1c1e 100%
+  );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 600px;
-  height: 100vh;
 }
