@@ -2,19 +2,16 @@ import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
-import Resume from "./pages/Resume";
-import Work from "./pages/Work";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <>
+      <Nav />
       <div className="page-wrapper">
-        <Nav />
-
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/work" element={<Work />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </>

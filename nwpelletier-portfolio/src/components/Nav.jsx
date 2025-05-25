@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Nav.css";
+import "./Nav.css";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
@@ -9,19 +9,13 @@ const Nav = () => {
         to="/"
         className={({ isActive }) => (isActive ? "tab active" : "tab")}
       >
-        Home
+        home
       </NavLink>
       <NavLink
-        to="/resume"
+        to="/projects"
         className={({ isActive }) => (isActive ? "tab active" : "tab")}
       >
-        Resume
-      </NavLink>
-      <NavLink
-        to="/work"
-        className={({ isActive }) => (isActive ? "tab active" : "tab")}
-      >
-        Work
+        projects
       </NavLink>
     </div>
   );

@@ -1,21 +1,4 @@
 :root {
-  /* Variables */
-  --h1-color: blue;
-  --p-color: yellow;
-  --primary-border-color: green;
-  --secondary-border-color: brown;
-
-  color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  background: linear-gradient(
-    90deg,
-    #1c1c1e 0%,
-    #414149 25%,
-    #4b4b63 50%,
-    #414149 75%,
-    #1c1c1e 100%
-  );
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

@@ -1,13 +1,25 @@
 import React from "react";
-import { Carousel } from ".././components/Carousel";
-import { slides } from ".././data/carouselData.json/";
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="home">
-      <Carousel data={slides} />
+    <div className="page-container">
+      <Intro />
     </div>
   );
 };
+
 export default Home;
+
+const Intro = () => {
+  return (
+    <div className="intro">
+      <h2>Hi!</h2>
+      <p>
+        I'm Nick, a web developer focused on React and modern UI. I come from a
+        background in music and sound recording, which shaped the way I approach
+        problem-solving—carefully, creatively, and with attention to detail.
+      </p>
+    </div>
+  );
+};

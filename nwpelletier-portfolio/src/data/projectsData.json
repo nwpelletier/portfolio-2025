@@ -1,0 +1,21 @@
+[
+  {
+    "title": "EDU-VRAI",
+    "technologies": "Unity, C#, VR",
+    "content": [
+      {
+        "type": "text",
+        "value": "A networked VR project built in Unity using a client-server architecture. Players could interact with programmable lab equipment in real time, simulating experiments in a shared virtual space."
+      },
+      {
+        "type": "text",
+        "value": "I implemented interaction systems using a finite state machine to manage object behavior and player input cleanly across networked clients."
+      },
+      {
+        "type": "text",
+        "value": "The project emphasized reliability and low-latency interaction, with a strong focus on immersive, educational design."
+      }
+    ],
+    "url": "https://vrai-dev.johnabbott.qc.ca/"
+  }
+]
