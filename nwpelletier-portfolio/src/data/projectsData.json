@@ -54,7 +54,7 @@
     "content": [
       {
         "type": "text",
-        "value": "Creates a grid-based maze of varying room types. You can set any grid size (tested with sizes 100+), and the generator still works reliably. The maze always has one start room (green), one end room (red), and a mazelike path connecting them."
+        "value": "Creates a grid-based maze of varying room types. You can set any grid size (tested with sizes 100+), and the generator still works reliably. The maze always has one start room (green), one end room (red), and a mazelike path connecting them.  This personal project is inspired by the procedural generation of dungeons in games like The Binding of Isaac and Spelunky."
       },
       {
         "type": "image",
@@ -62,7 +62,7 @@
       },
       {
         "type": "text",
-        "value": "Uses a lot of placeholder textures and models. The main focus is on Kruskal pathfinding, generating different room types under constraints — for example, the spawn has to be a specific distance from the end, there is a set amount of room types that can vary, and certain room types have variant floor patterns."
+        "value": "Makes use of room prefabs (with every combination of open doors to the four cardinal directions), which are placed randomly in the grid. The generator ensures that each room is connected to at least one other room, creating a continuous path through the maze.  Kruskal's algorithm is used to ensure that the maze is fully connected and has no loops."
       },
       {
         "type": "image",
@@ -70,7 +70,7 @@
       },
       {
         "type": "text",
-        "value": "To dos include more dynamic movement, exploring different room shapes and sizes, and deciding whether to make the game fully 3D or keep it strictly 2D."
+        "value": "The rooms are currently marked with colored spheres to indicate their type (spawn, end, trap-room, treasure-room, etc.). Additional scripts leverage the placement of these rooms so the player will have to traverse many rooms before reaching the end, and will encounter traps and treasures along the way.  Room sub-types have floor-grids that can be used to place objects like enemies, items, and obstacles, also with the capacity to be randomized."
       },
       {
         "type": "image",
