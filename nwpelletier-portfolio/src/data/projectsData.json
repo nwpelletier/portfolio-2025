@@ -80,7 +80,7 @@
     "url": ""
   },
   {
-    "title": "Twitch Ad Volume Throttle",
+    "title": "Whisper Ads",
     "technologies": "JavaScript, HTML, CSS",
     "content": [
       {
@@ -89,11 +89,19 @@
       },
       {
         "type": "image",
-        "src": "/pictures/twitch-volume-fix-gui.jpg"
+        "src": "/pictures/whisper-ads-gui.jpg"
       },
       {
         "type": "text",
         "value": "The extension is designed to be lightweight and unobtrusive, running in the background without affecting the overall performance of the browser or Twitch itself."
+      },
+      {
+        "type": "image",
+        "src": "/pictures/whisper-ads-icon.png"
+      },
+      {
+        "type": "text",
+        "value": "Future improvements would include adding support for more platforms and enhancing the user interface for easier configuration and customization."
       }
     ],
     "url": "https://github.com/nwpelletier/ad-volume-normalizer/"

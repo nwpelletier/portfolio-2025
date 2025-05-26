@@ -151,3 +151,11 @@
     transform: translateY(-2px) translateX(-0.5px);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .tab {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px 0;
+  }
+}

@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import projectsData from "../data/projectsData.json";
 import "./Projects.css";
 
 const Projects = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isFullScreen = screenWidth > 1200;
   const handleSelect = (index) => {
     setSelectedIndex(index);
   };
@@ -25,7 +36,9 @@ const Projects = () => {
 
       <div className="projects-container">
         {projectsData.map((project, idx) => {
-          if (selectedIndex !== null && selectedIndex !== idx) return null;
+          if (isFullScreen) {
+            if (selectedIndex !== null && selectedIndex !== idx) return null;
+          }
           return (
             <div key={idx} className="project">
               <h1>{project.title}</h1>

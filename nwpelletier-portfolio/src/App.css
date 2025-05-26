@@ -108,3 +108,19 @@ body::before {
   background: linear-gradient(225deg, rgba(0, 255, 255, 0.2), transparent 70%);
   z-index: 5;
 }
+
+@media screen and (max-width: 1200px) {
+  .page-wrapper {
+    width: 95vw;
+    height: 95vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    width: 100vw;
+    height: 85vh;
+    margin-top: 1em;
+    border-radius: 0;
+  }
+}
