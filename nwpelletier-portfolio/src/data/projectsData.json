@@ -77,6 +77,25 @@
         "src": "/pictures/map-generator-workspace.jpg"
       }
     ],
-    "url": "https://cerasp.vercel.app"
+    "url": ""
+  },
+  {
+    "title": "Twitch Ad Volume Throttle",
+    "technologies": "JavaScript, HTML, CSS",
+    "content": [
+      {
+        "type": "text",
+        "value": "A Chrome extension that automatically lowers the volume of Twitch ads to a user-defined level. It uses MutationObservers to detect when an ad is playing and adjusts the volume accordingly, ensuring a consistent and comfortable viewing experience."
+      },
+      {
+        "type": "image",
+        "src": "/pictures/twitch-volume-fix-gui.jpg"
+      },
+      {
+        "type": "text",
+        "value": "The extension is designed to be lightweight and unobtrusive, running in the background without affecting the overall performance of the browser or Twitch itself."
+      }
+    ],
+    "url": "https://github.com/nwpelletier/ad-volume-normalizer/"
   }
 ]
