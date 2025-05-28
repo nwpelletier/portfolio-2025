@@ -17,6 +17,12 @@ const Nav = () => {
       >
         projects
       </NavLink>
+      <NavLink
+        to="/resume"
+        className={({ isActive }) => (isActive ? "tab active" : "tab")}
+      >
+        resume
+      </NavLink>
     </div>
   );
 };
