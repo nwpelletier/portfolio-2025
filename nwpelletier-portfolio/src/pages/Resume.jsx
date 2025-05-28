@@ -50,7 +50,7 @@ const Resume = () => {
         <div className="download-section">
           <a
             className="download-btn"
-            href="/Nick-Pelletier-Resume-2025.pdf"
+            href="/npelletier-resume-2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "inherit" }}
